@@ -87,6 +87,9 @@ img{
     background-color: hsl(256, 67%, 59%);
     padding: 70px 30px 50px 30px;
 }
+.Tenx{
+    color: hsl(39, 100%, 71%);
+}
 .sq2 img{
     width: 100%;
     height: auto;
@@ -173,7 +176,6 @@ img{
     text-align: left;
     padding: 25px;
     background-color: hsl(0, 0%, 100%);
-
 }
 .sq7 p{
     font-size: 20px;
@@ -202,29 +204,20 @@ img{
 /*------------- DESKTOP VERSION -----------------------*/
 
 @media(max-width: 760px){
-
-
- /* Base styles */
-body {
-    font-family: 'Regular';
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body{
     padding: 20px;
-    background-color: hsl(0, 0%, 96%);
 }
-
 /* Container as flex for stacking */
 .bento-container {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 100%; /* Full width for mobile */
     max-width: 400px; /* Optional max width for smaller devices */
     padding: 10px;
 }
 
 .item {
+    min-width: 250px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -250,54 +243,108 @@ img {
 
 /* Individual square colors and styling */
 .sq1 {
+    display: inline;
     background-color: hsl(31, 66%, 93%);
+    font-size: 20px;
+    order: 7;
+}
+.sq1 img{
+    width: 70%;
+    margin-top: 10px;
 }
 
 .sq2 {
-    background-color: hsl(256, 67%, 59%);
-    color: white;
+    display: inline;
     text-align: center;
+    padding: 25px;
+    font-size: 30px;
+    line-height: 0.95;
+    order: 0;
+
+}
+.sq2 img{
+    margin: 10px 0px 0px 0px;
+    scale: 0.6;
+}
+
+.sq2 .bottom-text{
+    font-size: 10px;
+    margin: 0;
+    
 }
 
 .sq3 {
+    align-items: center;
+    text-align: center;
+    letter-spacing: -1px;
     background-color: hsl(254, 88%, 90%);
+}
+.sq3 img{
+    width: 100%;
+}
+.sq3 span{
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 1;
+    order: 3;
 }
 
 .sq4 {
     background-color: hsl(0, 0%, 100%);
+    order: 1;
+   
+}
+.sq4 span{
+    font-size: 18px;
+    letter-spacing: -1px;
+    margin-top: 10px;
 }
 
 .sq5 {
+    font-size: 18px;
+    letter-spacing: -1px;
+    padding-right: 80px;
     background-color: hsl(39, 100%, 71%);
+    order:2;
 }
 
 .sq6 {
     background-color: hsl(39, 100%, 71%);
+    padding-right: 70px;
+    order: 7;
 }
+.sq6 span{    
+    font-size: 20px;
+    margin-right: -30px;
+    margin-bottom: 10px;
+    letter-spacing: 0px;
+}
+
 
 .sq7 {
     background-color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    order: 5;
+}
+.sq7 p{
+    font-size: 13px;
+    letter-spacing: 0px;
 }
 
 .sq8 {
     background-color: hsl(256, 67%, 59%);
     color: white;
     text-align: center;
+    padding: 20px 50px 20px 50px;
+}
+.sq8 img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    order: 4;
 }
 
-/* Responsive adjustments */
-@media (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
-    .bento-container {
-        padding: 5px;
-    }
-    .sq1, .sq2, .sq3, .sq4, .sq5, .sq6, .sq7, .sq8 {
-        font-size: 16px;
-        padding: 10px;
-    }
-}
+
 
 
 }
